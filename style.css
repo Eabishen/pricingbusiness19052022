@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    height: auto;
+    min-height: fit-content;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background: #fff url(preloader2.gif) no-repeat center center;
+    left: 0;
+    top: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* sWIPPER */
+.swiper {
+    width: 100%;
+    height: 100%;
+    min-height: 40vh;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-box i {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 100%;
+    outline: 1px solid rgb(243, 243, 243);
+    box-shadow: 0 05px 05px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.8); */
+}
+.icon1 {
+    color: #2d30ce;
+}
+
+.icon2 {
+    color: #0dc75a;
+}
+
+.icon3 {
+    color: #df9b08;
+}
+
+.icon4 {
+    color: #810de0;
+}
+
+.main-text {
+    margin: 20px 0 5px;
+    padding: 0;
+    font-weight: 800 !important;
+    font-size: 18px;
+}
+
+.main-para {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+
+/* Swipper */
+
+/* Body */
+/* Card Themes - Start */
+.basic .pricing-header {
+    background-color: #5894d3;
+}
+.basic .price-circle {
+    border: 8px solid #84b8f0;
+    transition: all 0.4s;
+}
+.basic:hover .price-circle {
+    border-width: 5px;
+}
+
+.buy-now {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #f9f5f4;
+    color: #8b9ee2;
+    font-weight: 700;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.8);
+    /* background-image: linear-gradient(to left, #5894d3, #84b8f0); */
+    transition: all 0.4s;
+}
+
+.buy-now:hover {
+    font-weight: 800;
+}
+.buy-now:focus {
+    box-shadow: inset 4px 4px 5px 0 rgba(0, 0, 0, 0.2),
+        inset -4px -4px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.eco .pricing-header {
+    background-color: #1f3c88;
+}
+.eco .price-circle {
+    border: 8px solid #4864aa;
+    transition: all 0.4s;
+}
+.eco:hover .price-circle {
+    border-width: 5px;
+}
+/* 
+.eco .buy-now {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, #df9b08, #eeba4a);
+}
+
+.eco .buy-now:hover {
+    background-image: none !important;
+    background-color: #df9b08 !important;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+} */
+
+.pro .pricing-header {
+    background-color: #070d59;
+}
+.pro .price-circle {
+    border: 10px solid #22276d;
+    transition: all 0.4s;
+}
+.pro:hover .price-circle {
+    border-width: 5px;
+}
+/* .pro .buy-now {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, #810de0, #9563c7);
+}
+
+.pro .buy-now:hover {
+    background-image: none !important;
+    background-color: #810de0 !important;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+} */
+
+.business .pricing-header {
+    background-color: #810de0;
+}
+.business .price-circle {
+    border: 8px solid #a55eea;
+    transition: all 0.4s;
+}
+.business:hover .price-circle {
+    border-width: 5px;
+}
+
+/* .business .buy-now {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, #810de0, #a955ee);
+}
+
+.business .buy-now:hover {
+    background-image: none !important;
+    background-color: #810de0 !important;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+} */
+
+/* Card Themes - End */
+body {
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin-top: 20px; */
+}
+
+.container {
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.column {
+    flex: 25%;
+    gap: 10px;
+    padding: 10px;
+    width: calc(33.3% - 30px);
+    box-sizing: border-box;
+}
+@media screen and (max-width: 980px) {
+    .column {
+        flex: 50%;
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .column {
+        flex: 100%;
+        display: block;
+    }
+    .pricing-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+.pricing-card {
+    -webkit-transition: 0.4s background-color ease;
+    -ms-transition: 0.4s background-color ease;
+    transition: 0.4s background-color ease;
+    height: 315px;
+    background-color: #f9f5f4;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    width: 90%;
+    position: relative;
+    margin: 10px auto;
+    transition: all 0.4s;
+    border: 1px solid #dadada;
+    box-shadow: 0px 2px 8px 0 rgba(15, 2, 71, 0.1);
+}
+.pricing-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+.pricing-card .popular {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: auto;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #eb3b5a;
+    color: white;
+    font-size: 12px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.pricing-card .badge-box {
+    padding: 0 10px;
+    margin-top: 80px;
+    display: flex;
+}
+
+.pricing-card .badge-box span {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pricing-card .badge-box small {
+    display: inline-block;
+    border: 1px solid #4b7bec;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4b7bec;
+}
+.pricing-card .pricing-header {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    /*border-bottom: 20px solid $primary;*/
+    /*
+  border-radius: $radius $radius 150px 150px;
+  -webkit-border-radius: $radius $radius 150px 150px;
+  -moz-border-radius: $radius $radius 150px 150px;
+  */
+}
+.pricing-card .pricing-header .plan-title {
+    font-size: 24px;
+    color: white;
+    position: relative;
+    top: 25%;
+}
+.pricing-card .pricing-header .price-circle {
+    width: calc(60.3% - 30px);
+    width: 150px;
+    height: 120px;
+    border-radius: 20px;
+    left: calc(50% - 70px);
+    top: 60%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.pricing-card .pricing-header .price-circle .info {
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+.pricing-card .pricing-header .price-circle .price-title {
+    display: block;
+    font-size: 20px;
+    padding: 8px 0 0;
+    font-weight: bold;
+}
+
+.pricing-card .pricing-header .price-circle .month-header {
+    font-weight: 700;
+}
+.pricing-card .pricing-header .price-circle .price-title small {
+    font-size: 18px;
+}
+.pricing-card .pricing-header h2 {
+    position: relative;
+    top: 40%;
+    color: #fff;
+}
+.pricing-card ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+.pricing-card ul li {
+    list-style-type: none;
+    display: block;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.pricing-card .buy-button-box {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+/* .pricing-card .buy-button-box .buy-now {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #3a4b97, #7e9beb);
+    margin-top: 20px;
+} */
