@@ -428,3 +428,10 @@ body {
     background-image: linear-gradient(to left, #3a4b97, #7e9beb);
     margin-top: 20px;
 } */
+
+@media screen and (max-width: 500px) {
+    .main-para {
+        max-width: 95%;
+    }
+}
+
