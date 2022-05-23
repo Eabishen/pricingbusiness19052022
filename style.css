@@ -430,11 +430,19 @@ body {
 } */
 
 @media screen and (max-width: 500px) {
+    body {
+        background-image: url(backgroundm.png);
+    }
     .main-para {
         max-width: 95%;
     }
     .swiper-pagination {
-        margin: 20px 0;
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background-image: url(backgroundm.png);
     }
 }
 
