@@ -433,5 +433,8 @@ body {
     .main-para {
         max-width: 95%;
     }
+    .swiper-pagination {
+        margin: 20px 0;
+    }
 }
 
